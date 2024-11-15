@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <!-- Menghubungkan file CSS untuk mendesain halaman -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan library animasi AOS dari CDN untuk efek animasi scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <!-- Daftar tautan untuk navigasi cepat ke bagian-bagian halaman -->
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <!-- Tombol toggle untuk mengaktifkan dark mode -->
+            <li>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <!-- Gambar profil dengan keterangan singkat -->
+        <img src="image/_DSC6511 edit.jpg" alt="Foto Profil" class="profile-img">
+        <div class="hero-content">
+            <h1>Hallo, Saya Najwa Ikhwan Maulana</h1>
+            <p>Web Developer <strong>|</strong> Desainer <strong>|</strong> Programmer</p>
+            <p>Bersemangat untuk menciptakan solusi digital yang elegan dan efisien.</p>
+        </div>        
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 data-aos="zoom-in-up">Tentang Saya</h2>
+        <!-- Paragraf deskripsi diri yang menggunakan animasi zoom-in -->
+        <p data-aos="zoom-in-up">Halo! Saya Najwa Ikhwan Maulana, seorang pengembang web dengan passion dalam mendesain aplikasi yang modern dan ramah pengguna.</p>
+        <ul data-aos="zoom-in-up">
+            <li><strong>Kemampuan:</strong> HTML, CSS, JavaScript dan UI/UX.</li>
+            <li><strong>Hobi:</strong> Coding, Bermain Game, fotografi.</li>
+            <li><strong>Tujuan:</strong> Berkontribusi dalam proyek-proyek inovatif dan meningkatkan pengalaman user.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Project</h2>
+        <!-- Deskripsi proyek dengan efek animasi scroll -->
+        <div class="project-item" data-aos="zoom-in-up">
+            <h3><a>Membuat Game 2D Perkereta Apian</a></h3>
+            <p>Project ini adalah project dari Mata Kuliah Desain Grafis dan Multimedia.</p>
+            <img src="image/game 2d.jpg" alt="Gambar Proyek 1" class="project-img">
+        </div>
+        
+        <div class="project-item" data-aos="zoom-in-up">
+            <h3><a href="https://web-profile-studyclub-plugin.vercel.app/" target="_blank">Profile Website Sederhana</a></h3>
+            <p>Profile Website Profile Sederhana ini saya buat waktu mengikuti studyclub plugin.</p>
+            <img src="image/web profile.png" alt="Profile Website Sederhana" class="project-img">
+        </div>
+        
+        <!-- Bagian penghargaan dengan animasi scroll -->
+        <div class="achievement" data-aos="zoom-in-up">
+            <h3>Penghargaan / Sertifikat</h3>
+            <p>Sertifikat ini saya dapat ketika saya mengikuti lomba Desain UI/UX Silogy 2024.</p>
+            <img src="image/Sertifikat SylogiEduFair2024.jpg" alt="Gambar Penghargaan" class="project-img">
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" data-aos="zoom-in-up">
+        <h2 data-aos="zoom-in-up">Kontak Saya</h2>
+        <p data-aos="zoom-in-up">Saya akan sangat senang untuk terhubung dengan Anda! Anda dapat menghubungi saya melalui:</p>
+        <div class="social-links" data-aos="zoom-in-up">
+            <!-- Tautan ke media sosial dengan ikon -->
+            <a href="mailto:nanaikhwanm69@gmail.com" target="_blank">
+                <img src="image/icon/gmail.png" alt="Email Icon">
+                Gmail
+            </a>
+            <a href="https://www.linkedin.com/in/najwa-ikhwan-maulana/" target="_blank">
+                <img src="image/icon/linkedin.png" alt="LinkedIn Icon">
+                LinkedIn
+            </a>
+            <a href="https://github.com/NanaIkhwan" target="_blank">
+                <img src="image/icon/github.png" alt="GitHub Icon">
+                GitHub
+            </a>
+            <a href="https://www.instagram.com/nana_ikhwan_m/" target="_blank">
+                <img src="image/icon/instagram.png" alt="Instagram Icon">
+                Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Bagian footer -->
+    <footer>
+        <p>&copy; 2023 Najwa Ikhwan Maulana. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+    <!-- Menghubungkan JavaScript untuk dark mode dan smooth scroll -->
+    <script src="script.js"></script>
+    <!-- Menginisialisasi animasi AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

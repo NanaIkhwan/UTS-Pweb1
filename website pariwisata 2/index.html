@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorasi Pariwisata Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-overlay">
+            <img src="image/Bali/Bali.jpg" alt="Banner Pariwisata">
+            <h1>Eksplorasi Pariwisata Indonesia</h1>
+            <p>Jelajahi keindahan alam dan budaya Indonesia</p>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#content" onclick="showSection('content')">Destinasi</a></li>
+            <li><a href="#about" onclick="showSection('about')">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Berita dan Informasi Terkini</h2>
+            <div class="home-content">
+                <p>Temukan destinasi wisata terbaru yang sedang populer di Indonesia. Dari pantai eksotis hingga pegunungan megah, kami hadir untuk memberikan informasi terbaik untuk petualangan Anda!</p>
+                <h3>Berita Terkini</h3>
+                <ul>
+                    <li><strong>Festival Bali 2024: Kemeriahan Budaya Bali</strong> - Festival tahunan yang menampilkan seni dan budaya Bali akan segera dimulai di Ubud. Jangan lewatkan pengalaman budaya yang luar biasa ini!</li>
+                    <li><strong>Raja Ampat Menjadi Salah Satu Tujuan Wisata Terpopuler</strong> - Keindahan alam bawah laut Raja Ampat semakin terkenal di kalangan wisatawan mancanegara. Perjalanan ke Raja Ampat semakin mudah dengan berbagai pilihan penerbangan langsung.</li>
+                    <li><strong>Peningkatan Infrastruktur Pariwisata di Yogyakarta</strong> - Pemerintah setempat terus mengembangkan infrastruktur untuk meningkatkan kenyamanan wisatawan, termasuk renovasi area wisata Candi Borobudur dan Candi Prambanan.</li>
+                    <li><strong>Lombok Menawarkan Paket Wisata Ramah Lingkungan</strong> - Lombok memperkenalkan paket wisata yang fokus pada pelestarian lingkungan dan keberlanjutan, yang memungkinkan wisatawan menikmati alam dengan cara yang lebih bertanggung jawab.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section id="content" style="display: none;">
+            <h2>Destinasi Wisata Unggulan</h2>
+            <table>
+                <tr>
+                    <th>Nama Tempat</th>
+                    <th>Deskripsi</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>Raja Ampat</td>
+                    <td>Keindahan bawah laut dan pemandangan eksotis di Raja Ampat yang menakjubkan.</td>
+                    <td><img src="image/raja ampat/raja ampat.jpg" alt="Raja Ampat"></td>
+                </tr>
+                <tr>
+                    <td>Bali</td>
+                    <td>Pulau Dewata dengan pantai, pura, dan keunikan budaya yang mendunia.</td>
+                    <td><img src="image/Bali/Bali.jpg" alt="Bali"></td>
+                </tr>
+                <tr>
+                    <td>Yogyakarta</td>
+                    <td>Kota budaya dengan berbagai situs bersejarah, termasuk Candi Borobudur dan Prambanan.</td>
+                    <td><img src="image/Jogja/Jogja.jpg" alt="Yogyakarta"></td>
+                </tr>
+                <tr>
+                    <td>Lombok</td>
+                    <td>Destinasi yang terkenal dengan pantainya yang cantik dan Gili-gili yang menawan.</td>
+                    <td><img src="image/lombok/lombok.jpeg" alt="Lombok"></td>
+                </tr>
+            </table>
+
+            <!-- Formulir Pemesanan Tiket -->
+            <h3>Pemesanan Tiket</h3>
+            <form id="booking-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="destination">Tujuan:</label>
+                <select id="destination">
+                    <option value="Raja Ampat">Raja Ampat</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Lombok">Lombok</option>
+                </select>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+            <p id="confirmation" style="display: none;">Terima kasih! Pesanan Anda telah dikirim.</p>
+        </section>
+
+        <!-- Pop-up Konfirmasi Pemesanan -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close-popup" class="close-popup">&times;</span>
+                <h3>Terima kasih!</h3>
+                <p>Pesanan Anda telah dikirim.</p>
+                <button id="ok-button">OK</button> <!-- Tombol OK untuk menutup pop-up -->
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" style="display: none;">
+            <h2>Tentang Kami</h2>
+            <p>Kami hadir untuk memberikan informasi mengenai destinasi wisata terbaik di Indonesia. Hubungi kami untuk mendapatkan rekomendasi perjalanan terbaik sesuai kebutuhan Anda.</p>
+            <h3>Kontak Kami</h3>
+            <p>Email: info@pariwisata.com</p>
+            <p>Telepon: +62 123-456-7890</p>
+            <p>Instagram: <a href="https://www.instagram.com/pariwisata_id" target="_blank">@pariwisata_id</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eksplorasi Pariwisata Indonesia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,369 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+    background: linear-gradient(135deg, #4a90e2, #6a3093);
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-img {
+    width: 150px;
+    height: 155px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 1em;
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeUp 1s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    color: #6a3093;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+}
+
+.project-item, .achievement {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-item:hover, .achievement:hover {
+    transform: scale(1.02);
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* style.css */
+
+.project-item, .achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.project-item:hover, .achievement:hover {
+    transform: scale(1.02);
+    background-color: #f4f4f4;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+/* style.css */
+
+#contact {
+    text-align: center;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4a90e2;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4a90e2;
+}
+
+body {
+    padding-top: 60px; /* To avoid content hiding behind the nav bar */
+}
+
+/* Styling for sections */
+section {
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Styling for Dark Mode Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Switch active state for dark mode */
+input:checked + .slider {
+    background-color: #4a90e2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    color: #e0e0e0;
+    background-color: #333;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #333, #222);
+    color: #e0e0e0;
+}
+
+body.dark-mode nav {
+    background-color: #222;
+}
+
+body.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #444;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .project-item, 
+body.dark-mode .achievement {
+    background-color: #555;
+    border: 1px solid #666;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-mode .social-links a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .slider {
+    background-color: #666;
+}
+
+body.dark-mode .slider:before {
+    background-color: #222;
+}
+
+/* Untuk perangkat dengan lebar layar maksimal 768px (seperti tablet dan smartphone) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  /* Menyusun item navigasi secara vertikal */
+        text-align: center;  /* Memusatkan teks navigasi */
+    }
+
+    header {
+        padding: 2em 1em;  /* Mengurangi padding pada header */
+    }
+
+    .profile-img {
+        width: 120px;  /* Mengurangi ukuran gambar profil */
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2em;  /* Mengurangi ukuran font h1 */
+    }
+
+    .project-item, .achievement {
+        margin: 1em 0;  /* Memberikan margin lebih besar pada elemen proyek dan penghargaan */
+        padding: 1em;  /* Mengurangi padding untuk tampilan lebih baik di perangkat kecil */
+    }
+
+    .project-img {
+        width: 100%;  /* Membuat gambar proyek menyesuaikan dengan lebar kontainer */
+    }
+
+    .social-links {
+        flex-direction: column;  /* Menyusun link sosial secara vertikal */
+        gap: 1em;
+    }
+
+    footer p {
+        font-size: 0.8em;  /* Mengurangi ukuran font pada footer */
+    }
+}
+
+/* Untuk perangkat dengan lebar layar maksimal 480px (seperti smartphone) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;  /* Mengurangi ukuran font h1 lebih kecil */
+    }
+
+    .profile-img {
+        width: 100px;  /* Mengurangi ukuran gambar profil lebih kecil */
+        height: 100px;
+    }
+
+    .hero-content p {
+        font-size: 1em;  /* Menyesuaikan ukuran font dalam hero section */
+    }
+}
